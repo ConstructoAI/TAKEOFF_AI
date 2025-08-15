@@ -1,0 +1,122 @@
+{
+  "Béton": {
+    "Béton 25 MPa": {
+      "dimensions": "Par mètre cube",
+      "price": 150.0,
+      "price_unit": "m³",
+      "color": "#808080"
+    },
+    "Béton 30 MPa": {
+      "dimensions": "Par mètre cube",
+      "price": 165.0,
+      "price_unit": "m³",
+      "color": "#696969"
+    },
+    "Béton 35 MPa": {
+      "dimensions": "Par mètre cube",
+      "price": 180.0,
+      "price_unit": "m³",
+      "color": "#606060"
+    }
+  },
+  "Acier d'armature": {
+    "Barre 10M": {
+      "dimensions": "10mm dia",
+      "price": 0.85,
+      "price_unit": "m",
+      "color": "#B87333"
+    },
+    "Barre 15M": {
+      "dimensions": "15mm dia",
+      "price": 1.9,
+      "price_unit": "m",
+      "color": "#B87333"
+    },
+    "Barre 20M": {
+      "dimensions": "20mm dia",
+      "price": 3.4,
+      "price_unit": "m",
+      "color": "#B87333"
+    },
+    "Treillis métallique 152x152 MW9.1": {
+      "dimensions": "6x6 - 10/10",
+      "price": 2.5,
+      "price_unit": "pi²",
+      "color": "#8B7355"
+    }
+  },
+  "Coffrages": {
+    "Contreplaqué 3/4\"": {
+      "dimensions": "4'x8'x3/4\"",
+      "price": 45.0,
+      "price_unit": "feuille",
+      "color": "#DEB887"
+    },
+    "Madrier 2x10": {
+      "dimensions": "2\"x10\"x8'",
+      "price": 12.0,
+      "price_unit": "pièce",
+      "color": "#D2691E"
+    }
+  },
+  "Isolation": {
+    "Laine minérale R-12": {
+      "dimensions": "16\" c/c x 4'",
+      "price": 0.85,
+      "price_unit": "pi²",
+      "color": "#FFB6C1"
+    },
+    "Laine minérale R-20": {
+      "dimensions": "16\" c/c x 6'",
+      "price": 1.25,
+      "price_unit": "pi²",
+      "color": "#FFA0B4"
+    },
+    "Polystyrène extrudé 2\"": {
+      "dimensions": "2'x8'x2\"",
+      "price": 25.0,
+      "price_unit": "panneau",
+      "color": "#87CEEB"
+    }
+  },
+  "Gypse": {
+    "Gypse régulier 1/2\"": {
+      "dimensions": "4'x8'x1/2\"",
+      "price": 12.0,
+      "price_unit": "feuille",
+      "color": "#F5F5F5"
+    },
+    "Gypse résistant à l'eau 1/2\"": {
+      "dimensions": "4'x8'x1/2\"",
+      "price": 18.0,
+      "price_unit": "feuille",
+      "color": "#90EE90"
+    },
+    "Gypse coupe-feu 5/8\"": {
+      "dimensions": "4'x8'x5/8\"",
+      "price": 16.0,
+      "price_unit": "feuille",
+      "color": "#FFB6C1"
+    }
+  },
+  "Toiture": {
+    "Bardeau d'asphalte": {
+      "dimensions": "Paquet couvre 33.3 pi²",
+      "price": 30.0,
+      "price_unit": "paquet",
+      "color": "#8B4513"
+    },
+    "Membrane élastomère": {
+      "dimensions": "Rouleau 1m x 10m",
+      "price": 85.0,
+      "price_unit": "rouleau",
+      "color": "#2F4F4F"
+    },
+    "Membrane TPO 60 mil": {
+      "dimensions": "Rouleau 10' x 100'",
+      "price": 650.0,
+      "price_unit": "rouleau",
+      "color": "#F8F8FF"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+# Core dependencies
+streamlit>=1.40.0
+anthropic>=0.40.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# PDF processing
+pymupdf>=1.24.0
+Pillow>=10.0.0
+
+# Optional PDF export (will work without it)
+reportlab>=4.0.0
+
+# Data handling
+python-dotenv>=1.0.0
+
+# Utilities
+watchdog>=3.0.0
+
+# Canvas interactif pour les mesures
+streamlit-drawable-canvas>=0.9.0
+
+# Graphiques interactifs
+plotly>=5.0.0
+
+# Clics sur images
+streamlit-image-coordinates>=0.1.0
