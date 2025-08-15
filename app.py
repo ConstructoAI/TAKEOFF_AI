@@ -269,9 +269,11 @@ def main():
         # Profil expert
         st.subheader("👤 Profil Expert")
         profiles = st.session_state.profile_manager.get_profiles()
+        # Trier les profils par ordre alphabétique des noms
+        sorted_profile_keys = sorted(profiles.keys(), key=lambda x: profiles[x]['name'])
         selected_profile = st.selectbox(
             "Sélectionner un profil",
-            options=list(profiles.keys()),
+            options=sorted_profile_keys,
             format_func=lambda x: profiles[x]['name']
         )
         
