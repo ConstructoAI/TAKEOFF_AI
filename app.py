@@ -252,9 +252,9 @@ def main():
     with st.sidebar:
         st.header("⚙️ Configuration")
         
-        # Clé API Claude (sécurisée)
+        # Clé API (sécurisée)
         api_key = st.text_input(
-            "Clé API Claude",
+            "Clé API",
             type="password",
             value=os.getenv("ANTHROPIC_API_KEY", ""),
             help="Entrez votre clé API Anthropic"
@@ -563,7 +563,13 @@ def main():
                 chat_history=st.session_state.chat_history
             )
         else:
-            st.warning("⚠️ Veuillez configurer votre clé API Claude dans la barre latérale")
+            st.warning("""🔑 **Clé API requise**
+
+Veuillez saisir votre clé API dans la barre latérale pour commencer à utiliser EXPERTS IA.
+
+Pour obtenir une clé API, contactez Sylvain Leduc :
+📧 sylvainleduc2000@gmail.com
+📱 (514) 820-1972""")
     
     # Séparateur avant le PDF
     st.divider()
