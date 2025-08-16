@@ -269,8 +269,23 @@ def main():
         # Profil expert
         st.subheader("👤 Profil Expert")
         profiles = st.session_state.profile_manager.get_profiles()
-        # Trier les profils par ordre alphabétique des noms
-        sorted_profile_keys = sorted(profiles.keys(), key=lambda x: profiles[x]['name'])
+        # Trier les profils par ordre alphabétique français des noms (avec support des accents)
+        import locale
+        import unicodedata
+        
+        def normalize_for_sorting(text):
+            """Normalise le texte pour le tri alphabétique français"""
+            # Convertir en majuscules et normaliser les accents pour le tri
+            # NFD décompose les caractères accentués, puis on garde juste les caractères de base
+            return ''.join(
+                c for c in unicodedata.normalize('NFD', text.upper())
+                if unicodedata.category(c) != 'Mn'  # Mn = Mark, Nonspacing (accents)
+            )
+        
+        sorted_profile_keys = sorted(
+            profiles.keys(), 
+            key=lambda x: normalize_for_sorting(profiles[x]['name'])
+        )
         selected_profile = st.selectbox(
             "Sélectionner un profil",
             options=sorted_profile_keys,
