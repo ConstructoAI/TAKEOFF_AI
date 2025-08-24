@@ -582,8 +582,8 @@ def main():
 
 Veuillez saisir votre clé API dans la barre latérale pour commencer à utiliser EXPERTS IA.
 
-Pour obtenir une clé API, contactez Sylvain Leduc :
-📧 sylvainleduc2000@gmail.com
+Pour obtenir une clé API, contactez-nous :
+📧 info@constructoai.ca
 📱 (514) 820-1972""")
     
     # Séparateur avant le PDF
